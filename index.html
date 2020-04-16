@@ -40,7 +40,29 @@
        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
      }).addTo(map);
 
-     $.getJSON("https://awdn2020.io/AWDN_HP_3152020.geojson")
+     $.getJSON("https://raw.githubusercontent.com/embrown18/awdn2020.github.io/master/HPmesonetMar1520.geojson")
+        function(geoJsonPoint, latlng) {
+          return L.marker(latlng);
+        }
+
+     // pointToLayer: function(feature, latlng) {
+     //                 return L.circleMarker(latlng, { // we use circle marker for the points
+     //                     fillColor: "#de2d26",  // fill color of the circles
+     //                     color: '#fc4e2a',      // border color of the circles
+     //                     weight: 2,             // circle line weight in pixels
+     //                     fillOpacity: 0.5       // fill opacity (0-1)
+     //                 }).on({
+     //                    mouseover: function(e) {
+     //                       this.openPopup();
+     //                       this.setStyle({fillColor: 'yellow'});  // fill color turns yellow when mouseover
+     //                   },
+     //                   mouseout: function(e) {
+     //                       this.closePopup();
+     //                       this.setStyle({fillColor: '#de2d26'});  // fill turns original color when mouseout
+     //                   }
+     //               });
+     //             }
+     //         }).addTo(map);
 
    </script>
   </body>
