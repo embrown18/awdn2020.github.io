@@ -40,10 +40,12 @@
        attribution: 'Tiles &copy; Esri &mdash; Source: Esri, DeLorme, NAVTEQ, USGS, Intermap, iPC, NRCAN, Esri Japan, METI, Esri China (Hong Kong), Esri (Thailand), TomTom, 2012'
      }).addTo(map);
 
-     $.getJSON("https://raw.githubusercontent.com/embrown18/awdn2020.github.io/master/HPmesonetMar1520.geojson")
-        function(geoJsonPoint, latlng) {
-          return L.marker(latlng);
-        }
+     var data = $.getJSON("https://raw.githubusercontent.com/embrown18/awdn2020.github.io/master/HPmesonetMar1520.geojson")
+
+    
+
+
+
 
      // pointToLayer: function(feature, latlng) {
      //                 return L.circleMarker(latlng, { // we use circle marker for the points
