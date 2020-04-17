@@ -5842,7 +5842,7 @@
     "type": "Feature",
     "geometry": {
        "type": "Point",
-       "coordinates":  [ 107.88,37.1,1870 ]
+       "coordinates":  [ -107.88,37.1,1870 ]
     },
     "properties": {
     "ID":"A052432",
